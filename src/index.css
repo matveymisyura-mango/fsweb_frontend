@@ -1,4 +1,5 @@
 body {
+  direction: rtl;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -8,15 +9,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.step {
+  height: 25px;
+  width: 25px;
+  margin: 0 10px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  cursor: pointer;
 }
-
-.MuiDialog-paper {
-  padding: 15px;
+.step.active {
+  opacity: 1;
 }
-
-button.MuiButton-containedSecondary {
-  margin-bottom: 10px;
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
 }

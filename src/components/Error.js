@@ -2,7 +2,7 @@ import React from 'react';
 import Dialog from '@material-ui/core/Dialog';
 
 
-const Success = () => {
+const Error = () => {
 
     return (
         <>
@@ -12,7 +12,7 @@ const Success = () => {
                 fullWidth
                 maxWidth='sm'
             >
-                <h1 style={{textAlign: 'center'}}>נא לבדוק את המייל</h1>
+                <h1 style={{textAlign: 'center'}}>Error</h1>
             </Dialog>
         </>
 
@@ -20,4 +20,4 @@ const Success = () => {
 }
 
 
-export default Success;
+export default Error;
